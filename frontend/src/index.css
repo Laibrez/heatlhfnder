@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --color-verde-matcha: #10B981;
+  --color-azul-cielo: #38BDF8;
+}

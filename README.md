@@ -27,7 +27,7 @@ No build tools or dependencies required! This is a pure HTML, CSS, and JavaScrip
 1. Clone the repository:
 ```bash
 git clone https://github.com/Laibrez/heatlhfnder.git
-cd heatlhfnder
+cd healthfinder
 ```
 
 2. Open `index.html` in your web browser:
@@ -68,7 +68,7 @@ npx http-server
 ## Project Structure
 
 ```
-heatlhfnder/
+healthfinder/
 ├── index.html      # Main HTML structure
 ├── styles.css      # CSS styling and responsive design
 ├── script.js       # JavaScript functionality and interactivity

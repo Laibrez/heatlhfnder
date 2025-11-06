@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Health Finder - Find reliable health information and resources">
+    <title>Health Finder - Your Health Information Resource</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                <h1>Health Finder</h1>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#topics" class="nav-link">Health Topics</a>
+                <a href="#resources" class="nav-link">Resources</a>
+                <a href="#about" class="nav-link">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">Find Trusted Health Information</h2>
+            <p class="hero-subtitle">Search thousands of health topics, treatments, and wellness resources</p>
+            
+            <div class="search-box">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search for health topics, conditions, or treatments...">
+                <button class="search-button" id="searchButton">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    Search
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Topics -->
+    <section class="featured-topics">
+        <div class="container">
+            <h2 class="section-title">Popular Health Topics</h2>
+            <div class="topics-grid" id="topicsGrid">
+                <div class="topic-card" data-topic="nutrition">
+                    <div class="topic-icon">🥗</div>
+                    <h3 class="topic-title">Nutrition & Diet</h3>
+                    <p class="topic-description">Healthy eating guidelines, meal planning, and nutritional advice</p>
+                </div>
+                
+                <div class="topic-card" data-topic="exercise">
+                    <div class="topic-icon">💪</div>
+                    <h3 class="topic-title">Exercise & Fitness</h3>
+                    <p class="topic-description">Workout routines, fitness tips, and physical activity guidelines</p>
+                </div>
+                
+                <div class="topic-card" data-topic="mental-health">
+                    <div class="topic-icon">🧠</div>
+                    <h3 class="topic-title">Mental Health</h3>
+                    <p class="topic-description">Stress management, mental wellness, and emotional support</p>
+                </div>
+                
+                <div class="topic-card" data-topic="preventive-care">
+                    <div class="topic-icon">🛡️</div>
+                    <h3 class="topic-title">Preventive Care</h3>
+                    <p class="topic-description">Screenings, vaccinations, and preventive health measures</p>
+                </div>
+                
+                <div class="topic-card" data-topic="chronic-conditions">
+                    <div class="topic-icon">💊</div>
+                    <h3 class="topic-title">Chronic Conditions</h3>
+                    <p class="topic-description">Managing diabetes, heart disease, and other chronic illnesses</p>
+                </div>
+                
+                <div class="topic-card" data-topic="wellness">
+                    <div class="topic-icon">✨</div>
+                    <h3 class="topic-title">General Wellness</h3>
+                    <p class="topic-description">Sleep, hydration, lifestyle habits, and overall wellbeing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results -->
+    <section class="search-results hidden" id="searchResults">
+        <div class="container">
+            <h2 class="section-title">Search Results</h2>
+            <div id="resultsContainer"></div>
+        </div>
+    </section>
+
+    <!-- Quick Resources -->
+    <section class="resources">
+        <div class="container">
+            <h2 class="section-title">Quick Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3 class="resource-title">Find a Doctor</h3>
+                    <p class="resource-description">Search for healthcare providers in your area</p>
+                    <a href="#" class="resource-link">Get Started →</a>
+                </div>
+                
+                <div class="resource-card">
+                    <h3 class="resource-title">Health Tools</h3>
+                    <p class="resource-description">BMI calculator, symptom checker, and more</p>
+                    <a href="#" class="resource-link">Explore Tools →</a>
+                </div>
+                
+                <div class="resource-card">
+                    <h3 class="resource-title">Emergency Info</h3>
+                    <p class="resource-description">When to seek immediate medical attention</p>
+                    <a href="#" class="resource-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">Health Finder</h4>
+                    <p class="footer-text">Your trusted source for reliable health information and resources.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Use</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Disclaimer</h4>
+                    <p class="footer-text">This information is for educational purposes only and should not replace professional medical advice.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Health Finder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
